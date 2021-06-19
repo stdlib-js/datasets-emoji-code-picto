@@ -50,11 +50,11 @@
     "@stdlib/utils-copy": "^0.0.x"
   },
   "devDependencies": {
-    "@stdlib": "^0.0.x",
     "@stdlib/assert-is-browser": "^0.0.x",
     "@stdlib/assert-is-plain-object": "^0.0.x",
     "@stdlib/assert-is-windows": "^0.0.x",
     "@stdlib/bench": "^0.0.x",
+    "@stdlib/datasets-emoji": "^0.0.x",
     "@stdlib/fs-write-file": "^0.0.x",
     "@stdlib/process-exec-path": "^0.0.x",
     "@stdlib/utils-keys": "^0.0.x",
