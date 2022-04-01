@@ -1,0 +1,33 @@
+{
+  "name": "@stdlib/datasets-emoji-code-picto",
+  "version": "0.0.0",
+  "description": "Emoji codes and pictographs.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./index.mjs",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/datasets-emoji-code-picto.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "datasets",
+    "dataset",
+    "data",
+    "emoji",
+    "pictograph",
+    "picto",
+    "code",
+    "table",
+    "mapping",
+    "hash"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
