@@ -24,32 +24,30 @@ limitations under the License.
 
 > Map emoji codes to pictographs.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/datasets-emoji-code-picto
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-table = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-emoji-code-picto@umd/bundle.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/datasets-emoji-code-picto@umd/bundle.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.table;
-})();
-</script>
+var table = require( '@stdlib/datasets-emoji-code-picto' );
 ```
 
 #### table()
@@ -87,14 +85,9 @@ p = t[ ':unicorn:' ];
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-keys@umd/bundle.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/datasets-emoji-code-picto@umd/bundle.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var objectKeys = require( '@stdlib/utils-keys' );
+var table = require( '@stdlib/datasets-emoji-code-picto' );
 
 var codes;
 var tbl;
@@ -110,18 +103,77 @@ codes = objectKeys( tbl );
 for ( i = 0; i < codes.length; i++ ) {
     console.log( codes[ i ] + ' => ' + tbl[ codes[ i ] ] );
 }
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
 
 <!-- /.examples -->
 
+* * *
 
+<section class="cli">
+
+## CLI
+
+<section class="installation">
+
+## Installation
+
+To use the module as a general utility, install the module globally
+
+```bash
+npm install -g @stdlib/datasets-emoji-code-picto
+```
+
+</section>
+
+<!-- CLI usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```text
+Usage: emoji-code-picto [options]
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+```
+
+</section>
+
+<!-- /.usage -->
+
+<section class="notes">
+
+### Notes
+
+-   Data is written to `stdout` as comma-separated values ([CSV][csv]), where the first line is a header line.
+-   In contrast to the programmatic interface, some codes are **duplicated**, due to the inclusion of both [emoji][@stdlib/datasets/emoji] and [text presentation][@stdlib/datasets/emoji] emoji characters. 
+
+</section>
+
+<!-- /.notes -->
+
+<section class="examples">
+
+### Examples
+
+```bash
+$ emoji-code-picto
+code,emoji
+...
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.cli -->
 
 <!-- <license> -->
 
@@ -206,6 +258,7 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 [deno-url]: https://github.com/stdlib-js/datasets-emoji-code-picto/tree/deno
 [umd-url]: https://github.com/stdlib-js/datasets-emoji-code-picto/tree/umd
 [esm-url]: https://github.com/stdlib-js/datasets-emoji-code-picto/tree/esm
+[branches-url]: https://github.com/stdlib-js/datasets-emoji-code-picto/blob/main/branches.md
 
 [pddl-1.0]: http://opendatacommons.org/licenses/pddl/1.0/
 
@@ -217,9 +270,9 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/datasets/emoji]: https://github.com/stdlib-js/datasets-emoji/tree/umd
+[@stdlib/datasets/emoji]: https://github.com/stdlib-js/datasets-emoji
 
-[@stdlib/datasets/emoji-picto-code]: https://github.com/stdlib-js/datasets-emoji-picto-code/tree/umd
+[@stdlib/datasets/emoji-picto-code]: https://github.com/stdlib-js/datasets-emoji-picto-code
 
 <!-- </related-links> -->
 
