@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import table from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-emoji-code-picto@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/datasets-emoji-code-picto/tags). For example,
+
+```javascript
 import table from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-emoji-code-picto@v0.1.0-deno/mod.js';
 ```
 
@@ -82,7 +87,7 @@ p = t[ ':unicorn:' ];
 
 ```javascript
 import objectKeys from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-keys@deno/mod.js';
-import table from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-emoji-code-picto@v0.1.0-deno/mod.js';
+import table from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-emoji-code-picto@deno/mod.js';
 
 var codes;
 var tbl;
