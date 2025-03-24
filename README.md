@@ -35,33 +35,14 @@ limitations under the License.
 
 > Map emoji codes to pictographs.
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/datasets-emoji-code-picto
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
--   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
--   To use as a general utility for the command line, install the corresponding [CLI package][cli-section] globally.
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var table = require( '@stdlib/datasets-emoji-code-picto' );
+import table from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-emoji-code-picto@esm/index.mjs';
 ```
 
 #### table()
@@ -99,9 +80,14 @@ p = t[ ':unicorn:' ];
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var objectKeys = require( '@stdlib/utils-keys' );
-var table = require( '@stdlib/datasets-emoji-code-picto' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="module">
+
+import objectKeys from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-keys@esm/index.mjs';
+import table from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-emoji-code-picto@esm/index.mjs';
 
 var codes;
 var tbl;
@@ -117,77 +103,17 @@ codes = objectKeys( tbl );
 for ( i = 0; i < codes.length; i++ ) {
     console.log( codes[ i ] + ' => ' + tbl[ codes[ i ] ] );
 }
+
+</script>
+</body>
+</html>
 ```
 
 </section>
 
 <!-- /.examples -->
 
-* * *
 
-<section class="cli">
-
-## CLI
-
-<section class="installation">
-
-## Installation
-
-To use as a general utility, install the CLI package globally
-
-```bash
-npm install -g @stdlib/datasets-emoji-code-picto-cli
-```
-
-</section>
-
-<!-- CLI usage documentation. -->
-
-<section class="usage">
-
-### Usage
-
-```text
-Usage: emoji-code-picto [options]
-
-Options:
-
-  -h,    --help                Print this message.
-  -V,    --version             Print the package version.
-```
-
-</section>
-
-<!-- /.usage -->
-
-<section class="notes">
-
-### Notes
-
--   Data is written to `stdout` as comma-separated values ([CSV][csv]), where the first line is a header line.
--   In contrast to the programmatic interface, some codes are **duplicated**, due to the inclusion of both [emoji][@stdlib/datasets/emoji] and [text presentation][@stdlib/datasets/emoji] emoji characters. 
-
-</section>
-
-<!-- /.notes -->
-
-<section class="examples">
-
-### Examples
-
-```bash
-$ emoji-code-picto
-code,emoji
-...
-```
-
-</section>
-
-<!-- /.examples -->
-
-</section>
-
-<!-- /.cli -->
 
 <!-- <license> -->
 
@@ -221,7 +147,7 @@ The data files (databases) are licensed under an [Open Data Commons Public Domai
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -291,9 +217,9 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/datasets/emoji]: https://github.com/stdlib-js/datasets-emoji
+[@stdlib/datasets/emoji]: https://github.com/stdlib-js/datasets-emoji/tree/esm
 
-[@stdlib/datasets/emoji-picto-code]: https://github.com/stdlib-js/datasets-emoji-picto-code
+[@stdlib/datasets/emoji-picto-code]: https://github.com/stdlib-js/datasets-emoji-picto-code/tree/esm
 
 <!-- </related-links> -->
 
